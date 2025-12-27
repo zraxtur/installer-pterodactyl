@@ -4,7 +4,7 @@
 #                                                                      #
 #            Pterodactyl Installer, Updater, Remover and More          #
 #            Copyright 2025, Malthe K, <me@malthe.cc> hej              # 
-#  https://github.com/guldkage/Pterodactyl-Installer/blob/main/LICENSE #
+#  https://github.com/zraxtur/installer-pterodactyl/blob/main/LICENSE #
 #                                                                      #
 #  This script is not associated with the official Pterodactyl Panel.  #
 #  You may not remove this line                                        #
@@ -108,7 +108,7 @@ cat <<EOF
 -------------------------------------------------------------------
                Pterodactyl Installer @ v4.0
          Copyright 2025, Malthe Kragh <me@malthe.cc>
- https://github.com/guldkage/Pterodactyl-Installer
+ https://github.com/zraxtur/installer-pterodactyl
 
  This script is not associated with the official Pterodactyl Panel.
 
