@@ -45,7 +45,7 @@ Supported operating systems.
 | Apache           | :white_check_mark:  |
 
 # Contributors
-Copyright 2022-2025, [Malthe Kragh](https://github.com/guldkage), me@malthe.cc
+Copyright 2022-2025, [Malthe Kragh](https://github.com/guldkage), zraxtur@gmail.com
 <br>
 Created and maintained by [ZraXTur Hosting](https://github.com/zraxtur)
 
