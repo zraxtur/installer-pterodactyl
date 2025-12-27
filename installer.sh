@@ -28,7 +28,7 @@ warning(){
 
 ### TOKEN PROTECTION ###
 
-INSTALLER_TOKEN="jomok"
+INSTALLER_TOKEN="194"
 
 clear
 
