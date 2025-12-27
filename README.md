@@ -47,7 +47,7 @@ Supported operating systems.
 # Contributors
 Copyright 2022-2025, [Malthe Kragh](https://github.com/guldkage), me@malthe.cc
 <br>
-Created and maintained by [ZraXTur](https://github.com/zraxtur)
+Created and maintained by [ZraXTur Hosting](https://github.com/zraxtur)
 
 # Support
 The script has been tested many times without any bug fixes, however they can still occur.
