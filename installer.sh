@@ -88,13 +88,13 @@ options() {
         "Install PHPMyAdmin" "Remove PHPMyAdmin" \
         "Remove Wings" "Remove Panel" "Switch Domain"; do
         case $REPLY in
-            1) bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/refs/heads/main/installers/panel.sh); return ;;
-            2) bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/refs/heads/main/installers/wings.sh); return ;;
-            3) bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/refs/heads/main/installers/phpmyadmin.sh); return ;;
-            4) bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/refs/heads/main/installers/remove_phpmyadmin.sh); return ;;
-            5) bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/refs/heads/main/installers/remove_wings.sh); return ;;
-            6) bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/refs/heads/main/installers/remove_panel.sh); return ;;
-            7) bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/refs/heads/main/installers/switch_domains.sh); return ;;
+            1) bash <(curl -s https://raw.githubusercontent.com/zraxtur/installer-pterodactyl/refs/heads/main/installers/panel.sh); return ;;
+            2) bash <(curl -s https://raw.githubusercontent.com/zraxtur/installer-pterodactyl/refs/heads/main/installers/wings.sh); return ;;
+            3) bash <(curl -s https://raw.githubusercontent.com/zraxtur/installer-pterodactyl/refs/heads/main/installers/phpmyadmin.sh); return ;;
+            4) bash <(curl -s https://raw.githubusercontent.com/zraxtur/installer-pterodactyl/refs/heads/main/installers/remove_phpmyadmin.sh); return ;;
+            5) bash <(curl -s https://raw.githubusercontent.com/zraxtur/installer-pterodactyl/refs/heads/main/installers/remove_wings.sh); return ;;
+            6) bash <(curl -s https://raw.githubusercontent.com/zraxtur/installer-pterodactyl/refs/heads/main/installers/remove_panel.sh); return ;;
+            7) bash <(curl -s https://raw.githubusercontent.com/zraxtur/installer-pterodactyl/refs/heads/main/installers/switch_domains.sh); return ;;
             *) echo "Invalid option, try again." ;;
         esac
     done
