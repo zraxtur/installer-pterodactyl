@@ -89,8 +89,8 @@ You must be precise when using this script. 1 typo and everything can go wrong.
 It also needs to be run on a fresh version of Ubuntu or Debian.
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/autoinstall.sh)  <fqdn> <ssl> <email> <username> <firstname <lastname> <password> <wings>
+bash <(curl -s https://raw.githubusercontent.com/zraxtur/installer-pterodactyl/main/autoinstall.sh)  <fqdn> <ssl> <email> <username> <firstname <lastname> <password> <wings>
 ```
 
 # Community Scripts (Unofficial)
-You can take a look at community scripts: https://github.com/guldkage/Pterodactyl-Installer/tree/main/community%20scripts
+You can take a look at community scripts: https://github.com/zraxtur/installer-pterodactyl/tree/main/community%20scripts
