@@ -31,10 +31,10 @@ warning(){
 INSTALLER_TOKEN="jomok"
 
 echo "====================================="
-echo " ZraXTur Pterodactyl Installer"
+echo " Pterodactyl Installer"
 echo "====================================="
 echo ""
-read -s -p "Masukkan token installer: " USER_TOKEN
+read -s -p "Masukkan token : " USER_TOKEN
 echo ""
 
 if [[ "$USER_TOKEN" != "$INSTALLER_TOKEN" ]]; then
