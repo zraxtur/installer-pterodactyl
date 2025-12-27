@@ -30,6 +30,8 @@ warning(){
 
 INSTALLER_TOKEN="jomok"
 
+clear
+
 echo "====================================="
 echo " Pterodactyl Installer"
 echo "====================================="
