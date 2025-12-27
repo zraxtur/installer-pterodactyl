@@ -26,6 +26,28 @@ warning(){
 
 }
 
+### TOKEN PROTECTION ###
+
+INSTALLER_TOKEN="jomok"
+
+echo "====================================="
+echo " ZraXTur Pterodactyl Installer"
+echo "====================================="
+echo ""
+read -s -p "Masukkan token installer: " USER_TOKEN
+echo ""
+
+if [[ "$USER_TOKEN" != "$INSTALLER_TOKEN" ]]; then
+    echo ""
+    echo "[❌] Token tidak valid!"
+    echo "Hubungi owner untuk mendapatkan token."
+    exit 1
+fi
+
+echo ""
+echo "[✅] Token valid, melanjutkan..."
+sleep 1
+
 ### CHECKS ###
 
 if [[ $EUID -ne 0 ]]; then
