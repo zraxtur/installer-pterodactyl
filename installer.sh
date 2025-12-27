@@ -26,7 +26,7 @@ warning(){
 
 }
 
-### TOKEN PROTECTION ###
+### TOKEN ###
 
 INSTALLER_TOKEN="194"
 
