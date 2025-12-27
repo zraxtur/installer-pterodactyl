@@ -42,7 +42,8 @@ echo ""
 if [[ "$USER_TOKEN" != "$INSTALLER_TOKEN" ]]; then
     echo ""
     echo "[❌] Token tidak valid!"
-    echo "Hubungi owner untuk mendapatkan token."
+    echo "Hubungi ( @zraxtur ) untuk meminta token."
+    echo "Discord"
     exit 1
 fi
 
