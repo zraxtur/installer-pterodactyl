@@ -29,7 +29,7 @@ Supports newest version of Pterodactyl! This script is one of the only ones that
 
 # Support
 I have created a channel on my Discord Server where you can get support.
-https://discord.gg/3UUrgEhvJ2
+https://discord.gg/kdYHBAx7GE
 
 # Supported OS & Webserver
 Supported operating systems.
@@ -47,7 +47,7 @@ Supported operating systems.
 # Contributors
 Copyright 2022-2025, [Malthe Kragh](https://github.com/guldkage), me@malthe.cc
 <br>
-Created and maintained by [Malthe Kragh](https://github.com/guldkage)
+Created and maintained by [Malthe Kragh](https://github.com/zraxtur)
 
 # Support
 The script has been tested many times without any bug fixes, however they can still occur.
@@ -57,13 +57,13 @@ If you find errors, feel free to open an "Issue" on GitHub.
 # Interactive/Normal installation
 The recommended way to use this script.
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/installer.sh)
+bash <(curl -s https://raw.githubusercontent.com/zraxtur/Pterodactyl-Installer/main/installer.sh)
 ```
 
 ### Raspbian
 Only for raspbian users. They might need a extra < in the beginning.
 ```bash
-bash < <(curl -s https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/installer.sh)
+bash < <(curl -s https://raw.githubusercontent.com/zraxtur/Pterodactyl-Installer/main/installer.sh)
 ```
 
 # Autoinstall / Developer Installation
