@@ -5,7 +5,7 @@
 #                                                                      #
 #            Pterodactyl Installer, Updater, Remover and More          #
 #            Copyright 2025, Malthe K, <me@malthe.cc> hej              # 
-#  https://github.com/guldkage/Pterodactyl-Installer/blob/main/LICENSE #
+#  https://github.com/zraxtur/installer-pterodactyl/blob/main/LICENSE #
 #                                                                      #
 #  This script is not associated with the official Pterodactyl Panel.  #
 #  You may not remove this line                                        #
@@ -202,7 +202,7 @@ finish(){
             fi
     
             curl -L -o /usr/local/bin/wings "https://github.com/pterodactyl/wings/releases/latest/download/wings_linux_$([[ "$(uname -m)" == "x86_64" ]] && echo "amd64" || echo "arm64")"
-            curl -o /etc/systemd/system/wings.service https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/configs/wings.service
+            curl -o /etc/systemd/system/wings.service https://raw.githubusercontent.com/zraxtur/installer-pterodactyl/main/configs/wings.service
             chmod u+x /usr/local/bin/wings
             echo ""
             echo "[!] Pterodactyl Wings successfully installed."
@@ -278,7 +278,7 @@ panel_conf() {
 
     chown -R www-data:www-data /var/www/pterodactyl/*
 
-    curl -o /etc/systemd/system/pteroq.service https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/configs/pteroq.service
+    curl -o /etc/systemd/system/pteroq.service https://raw.githubusercontent.com/zraxtur/installer-pterodactyl/main/configs/pteroq.service
 
     echo "Adding artisan schedule to crontab..."
 
@@ -301,7 +301,7 @@ panel_conf() {
         fi
         echo "Downloading dummy config"
         curl -fsSL -o /etc/nginx/sites-enabled/pterodactyl.conf \
-            https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/refs/heads/main/configs/pterodactyl-nginx.conf \
+            https://raw.githubusercontent.com/zraxtur/installer-pterodactyl/refs/heads/main/configs/pterodactyl-nginx.conf \
             || { echo "Could not download dummy config."; exit 1; }
 
         sed -i "s@<domain>@${FQDN}@g" /etc/nginx/sites-enabled/pterodactyl.conf
@@ -359,7 +359,7 @@ panel_conf() {
                 [ -f /etc/nginx/sites-enabled/default ] && rm -f /etc/nginx/sites-enabled/default
                 rm -f /etc/nginx/sites-enabled/pterodactyl.conf
 
-                curl -o /etc/nginx/sites-enabled/pterodactyl.conf https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/configs/pterodactyl-nginx.conf
+                curl -o /etc/nginx/sites-enabled/pterodactyl.conf https://raw.githubusercontent.com/zraxtur/installer-pterodactyl/main/configs/pterodactyl-nginx.conf
                 sed -i -e "s@<domain>@${FQDN}@g" /etc/nginx/sites-enabled/pterodactyl.conf
 
                 echo "SESSION_SECURE_COOKIE=false" >> /var/www/pterodactyl/.env
@@ -379,7 +379,7 @@ panel_conf() {
             if [ -f /etc/nginx/sites-enabled/pterodactyl.conf ]; then
                 rm -f /etc/nginx/sites-enabled/pterodactyl.conf
             fi
-            curl -o /etc/nginx/sites-enabled/pterodactyl.conf https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/configs/pterodactyl-nginx-ssl.conf
+            curl -o /etc/nginx/sites-enabled/pterodactyl.conf https://raw.githubusercontent.com/zraxtur/installer-pterodactyl/main/configs/pterodactyl-nginx-ssl.conf
             if [ "$CUSTOMSSL" == true ]; then
                 sed -i -e "s@ssl_certificate /etc/letsencrypt/live/<domain>/fullchain.pem;@ssl_certificate ${CERTIFICATEPATH};@g" /etc/nginx/sites-enabled/pterodactyl.conf
                 sed -i -e "s@ssl_certificate_key /etc/letsencrypt/live/<domain>/privkey.pem;@ssl_certificate_key ${PRIVATEKEYPATH};@g" /etc/nginx/sites-enabled/pterodactyl.conf
@@ -396,7 +396,7 @@ panel_conf() {
             if [ -f /etc/apache2/sites-enabled/pterodactyl.conf ]; then
                 rm -f /etc/apache2/sites-enabled/pterodactyl.conf
             fi
-            curl -o /etc/apache2/sites-enabled/pterodactyl.conf https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/configs/pterodactyl-apache-ssl.conf
+            curl -o /etc/apache2/sites-enabled/pterodactyl.conf https://raw.githubusercontent.com/zraxtur/installer-pterodactyl/main/configs/pterodactyl-apache-ssl.conf
             if [ "$CUSTOMSSL" == true ]; then
                 sed -i -e "s@SSLCertificateFile /etc/letsencrypt/live/<domain>/fullchain.pem@SSLCertificateFile ${CERTIFICATEPATH}@g" /etc/nginx/sites-enabled/pterodactyl.conf
                 sed -i -e "s@SSLCertificateKeyFile /etc/letsencrypt/live/<domain>/privkey.pem@SSLCertificateKeyFile ${PRIVATEKEYPATH}@g" /etc/nginx/sites-enabled/pterodactyl.conf
@@ -413,7 +413,7 @@ panel_conf() {
             if [ -f /etc/nginx/sites-enabled/pterodactyl.conf ]; then
                 rm -f /etc/nginx/sites-enabled/pterodactyl.conf
             fi
-            curl -o /etc/nginx/sites-enabled/pterodactyl.conf https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/configs/pterodactyl-nginx.conf
+            curl -o /etc/nginx/sites-enabled/pterodactyl.conf https://raw.githubusercontent.com/zraxtur/installer-pterodactyl/main/configs/pterodactyl-nginx.conf
             sed -i -e "s@<domain>@${FQDN}@g" /etc/nginx/sites-enabled/pterodactyl.conf
             systemctl restart nginx
         elif [ "$WEBSERVER" == "Apache" ]; then
@@ -421,7 +421,7 @@ panel_conf() {
             if [ -f /etc/apache2/sites-enabled/pterodactyl.conf ]; then
                 rm -f /etc/apache2/sites-enabled/pterodactyl.conf
             fi
-            curl -o /etc/apache2/sites-enabled/pterodactyl.conf https://raw.githubusercontent.com/guldkage/Pterodactyl-Installer/main/configs/pterodactyl-apache.conf
+            curl -o /etc/apache2/sites-enabled/pterodactyl.conf https://raw.githubusercontent.com/zraxtur/installer-pterodactyl/main/configs/pterodactyl-apache.conf
             sed -i -e "s@<domain>@${FQDN}@g" /etc/apache2/sites-enabled/pterodactyl.conf
             a2enmod rewrite
             systemctl stop apache2 && systemctl start apache2
